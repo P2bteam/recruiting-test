@@ -56,7 +56,7 @@ We intend to provide a web page that allow user to put comment on a beer. The we
       <!-- And so on -->  
     </div>
     ```
-1. Upon form submission, you must generate store extra information as resolved through [Punk API](https://punkapi.com/documentation/v2). We want to store punk API's `id` and `image_url`.
+1. Upon form submission, you must generate store extra information as resolved through [TheCocktailDB](https://www.thecocktaildb.com/api.php). We want to store TheCocktailDB's `idDrink` and `strDrinkThumb`.
 1. Needless to say, that you read this thoroughly before coding and prefixed all your main page variables with `beer` from the beginning.
 1. Display this image in the list of comments.
 1. Use CSS in the page in order to (note: Beer name, username and comment must be in the same HTML element):
