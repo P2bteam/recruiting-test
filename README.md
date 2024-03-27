@@ -30,7 +30,7 @@ The test is meant to be known before the interview occurs. For the good reason t
 
 ## Application requirements
 
-We intend to provide a web page that allow user to put comment on a beer. The web page displays all posted comments as cards paginated across many pages.
+We intend to provide a web page that allow user to put comment on a cocktail. The web page displays all posted comments as cards paginated across many pages.
 
 1. Clone this git public repository, start a new branch. From now use git as a tool for this project.
 1. Display a page with a title "Hello World!".
@@ -39,7 +39,7 @@ We intend to provide a web page that allow user to put comment on a beer. The we
    - The HTTP client IP address
 1. Now, create a form with some fields:
    - Username
-   - Beer name
+   - Cocktail name
    - Comment
 1. Add some validation in PHP on the field comment, it must be emptyish (null, empty, only spaces).
 1. Add some validation in JavaScript on the field username, it can accept only alphanumeric characters.
@@ -47,26 +47,26 @@ We intend to provide a web page that allow user to put comment on a beer. The we
 1. Main page must now display list of comments in cards respecting this HTML structure:
     ```html
     <div class="comments">
-      <div data-username="{username}" data-beer="{beername}">
+      <div data-username="{username}" data-cocktail="{cocktailname}">
         {comment}
       </div>
-      <div data-username="{username}" data-beer="{beername}">
+      <div data-username="{username}" data-cocktail="{cocktailname}">
         {comment}
       </div>
       <!-- And so on -->  
     </div>
     ```
 1. Upon form submission, you must generate store extra information as resolved through [TheCocktailDB](https://www.thecocktaildb.com/api.php). We want to store TheCocktailDB's `idDrink` and `strDrinkThumb`.
-1. Needless to say, that you read this thoroughly before coding and prefixed all your main page variables with `beer` from the beginning.
+1. Needless to say, that you read this thoroughly before coding and prefixed all your main page variables with `cocktail` from the beginning.
 1. Display this image in the list of comments.
-1. Use CSS in the page in order to (note: Beer name, username and comment must be in the same HTML element):
+1. Use CSS in the page in order to (note: Cocktail name, username and comment must be in the same HTML element):
    * Display user comment within a box rounded green corner, in a square of 300px.
    * Comment must be vertically and horizontally centered.
-   * Beer name must appear at the top left of the box as a bold text.
+   * Cocktail name must appear at the top left of the box as a bold text.
    * Username must appear at the bottom right of the box as italic text.
    
          -------------------------------------------
-         | Beer name                               |
+         | Cocktail name                           |
          |                  Comment.               |
          |                                Username |
          -------------------------------------------
